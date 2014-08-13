@@ -1,0 +1,1 @@
+To achieve the desired customization, paste the .res file you want in the bastHUD/resource/ui folder. 
