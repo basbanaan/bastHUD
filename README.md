@@ -13,10 +13,18 @@ I made this hud for myself, but people started asking about it so i decided to p
 
 -Design another team selection panel.
 
-# Screenies
+# Useful links
+
+Steam group: http://steamcommunity.com/groups/bastHUD
+
+Teamfortress.tv thread: http://teamfortress.tv/thread/18508/basthud
+
+Screenshots: 
 
 * http://i.imgur.com/oQ1j4Jz.png -Main Menu
 * http://i.imgur.com/TLcWpeS.png -Class Selection
 * http://i.imgur.com/StOiQsu.png -Normal Health
 * http://i.imgur.com/C3abjo4.png -TargetID+ Medic HUD
 * http://i.imgur.com/bAh8CAk.png -Damage Numbers
+
+Full screenshot album: http://imgur.com/a/ab4rn
