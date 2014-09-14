@@ -9,9 +9,9 @@ I made this hud for myself, but people started asking about it so i decided to p
 
 # To-Do
 
--Add more customization.
+-Change the tournament HUD.
 
--Design another team selection panel.
+-Change everything about the MvM HUD. 
 
 # Useful links
 
