@@ -13,7 +13,7 @@
 		"tabPosition"	"0"
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"46 43 42 255"
+		"bgcolor_override"	"30 30 30 255"
 		"infocus_bgcolor_override" "46 43 42 255"
 		"outoffocus_bgcolor_override" "46 43 42 255"
 		
@@ -67,7 +67,7 @@
 		"font"			"HudFontSmallestBold"
 		"labelText"		">>"
 		"textAlignment"	"west"
-		"xpos"			"c-300"
+		"xpos"			"c-3009999"
 		"ypos"			"7"
 		"zpos"			"1"
 		"wide"			"20"
@@ -76,7 +76,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "200 80 60 255"
+		"fgcolor_override" "255 255 255 255"
 	}
 	"ArmoryLabel"
 	{
@@ -135,7 +135,7 @@
 		"NumericInputOnly"	"0"
 		"unicode"			"0"
 		
-		"fgcolor_override"	"235 226 202 255"
+		"fgcolor_override"	"255 255 255 255"
 		"bgcolor_override"	"51 47 46 255"
 		"disabledFgColor_override" "235 226 202 255"
 		"disabledBgColor_override" "51 47 46 255"
@@ -290,7 +290,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"labelText"		"&A"
+		"labelText"		"<"
 		"font"			"HudFontSmallBold"
 		"textAlignment"	"center"
 		"dulltext"		"0"
@@ -333,7 +333,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"labelText"		"&D"
+		"labelText"		">"
 		"font"			"HudFontSmallBold"
 		"textAlignment"	"center"
 		"dulltext"		"0"

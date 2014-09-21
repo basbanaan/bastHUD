@@ -51,8 +51,8 @@
         "xpos"          "c-1"
         "ypos"          "c-1"
         "zpos"          "5"
-        "wide"          "2"
-        "tall"          "2"
+        "wide"          "3"
+        "tall"          "3"
         "autoResize"    "0"
         "pinCorner"     "0"
         "visible"       "0"
@@ -67,8 +67,8 @@
         "xpos"          "c-2"
         "ypos"          "c-2"
         "zpos"          "4"
-        "wide"          "4"
-        "tall"          "4"
+        "wide"          "5"
+        "tall"          "5"
         "autoResize"    "0"
         "pinCorner"     "0"
         "visible"       "0"
@@ -426,8 +426,8 @@
     HudMedicCharge
     {
         "fieldName"     "HudMedicCharge"
-        "visible" "1"
-        "enabled" "1"
+        "visible"       "1"
+        "enabled"       "1"
         "xpos"          "0" 
         "ypos"          "r152"
         "wide"          "f0"
@@ -599,7 +599,7 @@
         "xpos"      "c-120"
         "ypos"      "310"
         "wide"      "60"
-        "tall"      "27"
+        "tall"      "40"
         "priority"  "40"
     }
     

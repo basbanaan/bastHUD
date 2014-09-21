@@ -2,12 +2,12 @@
 {
 	"Credits"
 	{
-		"label" "BASTHUD"
-		"command" "engine showconsole; echo For more awesome work visit www.deascrea.com"
+		"label" "BASTHUD v1.5 | Created by b4stian"
+		"command" "engine showconsole; echo For updates visit basthud.huds.tf or teamfortress.tv/thread/18508/basthud"
 	}
 	"FavoriteServer"
 	{
-		"command" "engine connect [IP SERVER]"
+		"command" "engine connect 87.233.222.114:27018"
 	}
 	"QuickplayButton"
 	{

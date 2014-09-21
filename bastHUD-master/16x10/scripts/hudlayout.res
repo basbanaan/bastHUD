@@ -426,8 +426,8 @@
     HudMedicCharge
     {
         "fieldName"     "HudMedicCharge"
-        "visible" "1"
-        "enabled" "1"
+        "visible"       "1"
+        "enabled"       "1"
         "xpos"          "0" 
         "ypos"          "r152"
         "wide"          "f0"
@@ -599,7 +599,7 @@
         "xpos"      "c-120"
         "ypos"      "310"
         "wide"      "60"
-        "tall"      "27"
+        "tall"      "40"
         "priority"  "40"
     }
     

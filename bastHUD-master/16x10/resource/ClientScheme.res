@@ -183,7 +183,7 @@ Scheme
 	BaseSettings
 	{
 		// vgui_controls color specifications
-		ReplayBrowser.BgColor								"DarkBrown"
+		ReplayBrowser.BgColor								"160 160 160 60"
 		ReplayBrowser.Details.TitleEdit.Carat.FgColor		"LightRed"
 		ReplayBrowser.Button.ArmedBgColor					"TFOrange"
 		ReplayBrowser.Button.DepressedBgColor				"TFOrange"
@@ -215,14 +215,14 @@ Scheme
 		Border.Dark						"Black"		// the dark/unlit side of a control
 		Border.Selection				"Gray"			// the additional border color for displaying the default/selected button
 
-		Button.TextColor				"TanLight"
-		Button.BgColor					"TanDark"
-		Button.ArmedTextColor			"TanLight"
-		Button.ArmedBgColor				"TFOrange"
-		Button.SelectedTextColor		"TanLight"
-		Button.SelectedBgColor			"TFOrange"
-		Button.DepressedTextColor		"Black"
-		Button.DepressedBgColor			"TFOrange"
+		Button.TextColor				"255 255 255 255"
+		Button.BgColor					"10 10 10 120"
+		Button.ArmedTextColor			"30 30 30 255"
+		Button.ArmedBgColor				"0 206 209 255"
+		Button.SelectedTextColor		"255 255 255 255"
+		Button.SelectedBgColor			"10 10 10 120"
+		Button.DepressedTextColor		"255 255 255 255"
+		Button.DepressedBgColor			"10 10 10 120"
 
 		CheckButton.TextColor			"Yellow"
 		CheckButton.SelectedTextColor	"Yellow"
@@ -254,12 +254,12 @@ Scheme
 		FrameSystemButton.BgColor		"Blank"
 		FrameSystemButton.Icon			""
 		FrameSystemButton.DisabledIcon	""
-		FrameTitleBar.TextColor			"Orange"
+		FrameTitleBar.TextColor			"0 221 255 255"
 		FrameTitleBar.BgColor			"Blank"
-		FrameTitleBar.DisabledTextColor	"Orange"
+		FrameTitleBar.DisabledTextColor	"0 221 255 255"
 		FrameTitleBar.DisabledBgColor	"Blank"
 
-		GraphPanel.FgColor				"Orange"
+		GraphPanel.FgColor				"0 221 255 255"
 		GraphPanel.BgColor				"TransparentBlack"
 
 		Label.TextDullColor				"TanDark"
@@ -270,12 +270,12 @@ Scheme
 		Label.DisabledFgColor1			"Blank"
 		Label.DisabledFgColor2			"Black"
 
-		ListPanel.TextColor					"Orange"
+		ListPanel.TextColor					"0 221 255 255"
 		ListPanel.BgColor					"TransparentBlack"
 		ListPanel.SelectedTextColor			"Black"
 		ListPanel.SelectedBgColor			"Red"
 		ListPanel.SelectedOutOfFocusBgColor	"Red"
-		ListPanel.EmptyListInfoTextColor	"Orange"
+		ListPanel.EmptyListInfoTextColor	"0 221 255 255"
 
 		Menu.TextColor					"TanLight"
 		Menu.BgColor					"TransparentBlack"
@@ -283,7 +283,7 @@ Scheme
 		Menu.ArmedBgColor				"TanLight"
 		Menu.TextInset					"6"
 
-		Chat.TypingText					"Orange"
+		Chat.TypingText					"0 221 255 255"
 
 		Panel.FgColor					"Gray"
 		Panel.BgColor					"Blank"
@@ -300,12 +300,12 @@ Scheme
 		"BuildingHealthBar.Health"		"ProgressOffWhite"
 		"BuildingHealthBar.LowHealth"	"LowHealthRed"
 
-		PropertySheet.TextColor			"Orange"
-		PropertySheet.SelectedTextColor	"Orange"
+		PropertySheet.TextColor			"0 221 255 255"
+		PropertySheet.SelectedTextColor	"0 221 255 255"
 		PropertySheet.TransitionEffectTime	"0.25"	// time to change from one tab to another
 
-		RadioButton.TextColor			"Orange"
-		RadioButton.SelectedTextColor	"Orange"
+		RadioButton.TextColor			"255 255 255 255"
+		RadioButton.SelectedTextColor	"0 221 255 255"
 
 		RichText.TextColor				"Gray"
 		RichText.BgColor				"Blank"
@@ -2413,6 +2413,16 @@ Scheme
 				"antialias"	"1"
 			}
 		}
+		"Futura9"
+		{
+			"1"
+			{
+				"name"		"Montserrat-Regular"
+				"tall"		"9"
+				"additive"		"0"
+				"antialias"	"1"
+			}
+		}
 
 		"CrossHairNormal"
 		{
@@ -3915,6 +3925,165 @@ Scheme
 				{
 					"color" "Blank"
 					"offset" "0 0"
+				}
+			}
+		}
+		
+		bastBorder
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "10 10 10 130"
+					"offset" "0 0"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "10 10 10 130"
+					"offset" "0 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "10 10 10 130"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "10 10 10 130"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		bastBorder2
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "0 221 255 255"
+					"offset" "1 1"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "0 221 255 255"
+					"offset" "1 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "0 221 255 255"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "0 221 255 255"
+					"offset" "1 1"
+				}
+			}
+		}
+		
+		bastBorder3
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "205 51 51 255"
+					"offset" "1 1"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "205 51 51 255"
+					"offset" "1 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "205 51 51 255"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "205 51 51 255"
+					"offset" "1 1"
+				}
+			}
+		}
+		bastBorder4
+		{
+			"inset" "0 0 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "50 205 50 255"
+					"offset" "1 1"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "50 205 50 255"
+					"offset" "1 1"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "50 205 50 255"
+					"offset" "1 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "50 205 50 255"
+					"offset" "1 1"
 				}
 			}
 		}
@@ -5425,67 +5594,72 @@ Scheme
 		}
 		"7" 
 		{
-			"font" "resource/symbol.ttf"
+			"font" "resource/font/symbol.ttf"
 			"name" "symbol"
 		}
 		"8" 
 		{
-			"font" "resource/FORMASGE.ttf"
+			"font" "resource/font/FORMASGE.ttf"
 			"name" "FORMASGE"
 		}
 		"9" 
 		{
-			"font" "resource/Paula.ttf"
+			"font" "resource/font/Paula.ttf"
 			"name" "Paula"
 		}
 		"10" 
 		{
-			"font" "resource/Archive.otf"
+			"font" "resource/font/Archive.otf"
 			"name" "Archive"
 		}
 		"11" 
 		{
-			"font" "resource/GOTHIC.ttf"
+			"font" "resource/font/GOTHIC.ttf"
 			"name" "Century Gothic"
 		}
 		"12" 
 		{
-			"font" "resource/MuseoSansCyrl-500.otf"
+			"font" "resource/font/MuseoSansCyrl-500.otf"
 			"name" "MuseoSansCyrl-500"
 		}
 		"13" 
 		{
-			"font" "resource/Archive_numbers.otf"
+			"font" "resource/font/Archive_numbers.otf"
 			"name" "Archive_numbers"
 		}
         "14" 
 		{
-			"font" "resource/fonts/Novecentowide-Book.otf"
+			"font" "resource/font/Novecentowide-Book.otf"
 			"name" "Novecentowide-Book"  
 		}
         "15" 
 		{
-			"font" "resource/fonts/NovecentoMedium.ttf"
+			"font" "resource/font/NovecentoMedium.ttf"
 			"name" "NovecentoMedium"  
 		}
 		"16" 
 		{
-			"font" "resource/HudasIscariote.otf"
+			"font" "resource/font/HudasIscariote.otf"
 			"name" "Hudas Iscariote"
 		}
-		"17"
+		"17" 
 		{
-			"font" "resource/Blocks.ttf"
-			"name" "Blocks"
+			"font" "resource/font/Montserrat-Regular.otf"
+			"name" "Montserrat-Regular"
 		}
-		"18" 
+		"18"
 		{
-			"font" "resource/crosshairs.ttf"
-			"name" "Crosshairs"
+			"font" "resource/font/Blocks.ttf"
+			"name" "Blocks"
 		}
 		"19" 
 		{
-		"font" "resource/Garm3nFont.ttf"
+			"font" "resource/font/crosshairs.ttf"
+			"name" "Crosshairs"
+		}
+		"20" 
+		{
+		"font" "resource/font/Garm3nFont.ttf"
 		"name" "Garm3nFont"
 		}
 	}

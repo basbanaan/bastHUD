@@ -559,6 +559,11 @@ event HudMedicCharged
     Animate ShadedBarThinLow        Alpha       "0"     Linear 0.0 0.0
     Animate ShadedBarThinFull       Alpha       "255"       Linear 0.0 0.0
     Animate ChargeMeter             FgColor     "0 221 255 255"     Linear 0.0 0.0
+    
+    Animate ChargeMeter1             FgColor     "0 221 255 255"     Linear 0.0 0.0
+    Animate ChargeMeter2             FgColor     "0 221 255 255"     Linear 0.0 0.0
+    Animate ChargeMeter3             FgColor     "0 221 255 255"     Linear 0.0 0.0
+    Animate ChargeMeter4             FgColor     "0 221 255 255"     Linear 0.0 0.0
 
     RunEvent HudMedicChargedLoop    0.0
 }
@@ -587,6 +592,12 @@ event HudMedicChargedStop
     Animate ShadedBarThinLow        Alpha       "255"       Linear 0.0 0.0001
     Animate ShadedBarThinFull       Alpha       "0"     Linear 0.0 0.0001
     Animate ChargeMeter             FgColor     "White"      Linear 0.0 0.0001
+    
+    Animate ChargeMeter1             FgColor     "255 255 255 255"     Linear 0.0 0.0
+    Animate ChargeMeter2             FgColor     "255 255 255 255"     Linear 0.0 0.0
+    Animate ChargeMeter3             FgColor     "255 255 255 255"     Linear 0.0 0.0
+    Animate ChargeMeter4             FgColor     "255 255 255 255"     Linear 0.0 0.0
+
 }
 
 //====================================
