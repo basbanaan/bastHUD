@@ -905,9 +905,9 @@
     HudCloseCaption
     {
         "fieldName" "HudCloseCaption"
-        "visible"   "0"
+        "visible"    "1"
         "enabled"   "1"
-        "xpos"      "999"
+        "xpos"      "c145"
         "ypos"      "250"   
         "wide"      "500"
         "tall"      "136"   
@@ -1664,4 +1664,15 @@
 		"tall"			"200"
 		"PaintBackgroundType"	"0"
 	}
+	HudMiniGame
+	{
+		"fieldName" "HudMiniGame"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"f0"
+		"tall"	"480"
+	}
 }
+
