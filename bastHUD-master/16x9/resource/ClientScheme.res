@@ -277,10 +277,10 @@ Scheme
 		ListPanel.SelectedOutOfFocusBgColor	"Red"
 		ListPanel.EmptyListInfoTextColor	"0 221 255 255"
 
-		Menu.TextColor					"TanLight"
-		Menu.BgColor					"TransparentBlack"
-		Menu.ArmedTextColor				"TanDark"
-		Menu.ArmedBgColor				"TanLight"
+		Menu.TextColor					"255 255 255 255"
+		Menu.BgColor					"32 32 32 255"
+		Menu.ArmedTextColor				"32 32 32 255"
+		Menu.ArmedBgColor				"BuffedColor"
 		Menu.TextInset					"6"
 
 		Chat.TypingText					"0 221 255 255"

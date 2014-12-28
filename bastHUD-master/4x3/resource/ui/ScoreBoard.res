@@ -191,7 +191,7 @@
 		"zpos"			"-1"
 		"wide"			"185"
 		"tall"			"171"
-		"fillcolor"		"32 32 32 240"
+		"fillcolor"		"0 0 0 200"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
@@ -354,7 +354,7 @@
 		"xpos"			"c-275"
 		"xpos_minmode"		"c35"
 		"ypos"			"r363"
-		"ypos_minmode"		"r376"
+		"ypos_minmode"		"r378"
 		"wide"			"265"
 		"wide_minmode"		"233"
 		"tall"			"18"
@@ -501,7 +501,7 @@
 
 		if_mvm
 		{
-                        "fillcolor"		"32 32 32 240"
+             "fillcolor"		"0 0 0 200"
 			"xpos"			"c-295"
 			"ypos"			"r394"
 			"wide"			"402"
@@ -1171,7 +1171,7 @@
 			
 			if_mvm
 			{
-				"visible"		"1"
+				"visible"		"0"
 			}	
 		}
 		
@@ -1872,9 +1872,9 @@
 			if_mvm
 			{
 				"font"		"DemiBold26"
-				"enabled"   "0"
-				"visible"   "0"
-				"xpos"		"c-198"
+				"enabled"   "1"
+				"visible"   "1"
+				"xpos"		"c-196"
 				"ypos"		"r172"
 				"wide"		"26"
 				"tall"		"25"
@@ -1909,7 +1909,8 @@
 				"xpos"			"c-280"
 				"ypos"			"r132"
 				"wide"			"178"
-				"visible"		"1"
+				"visible"		"0"
+				"fgcolor"		"255 255 255 255"
 			}	
 		}
 		"GameType"
@@ -1941,7 +1942,8 @@
 				"xpos"			"c-280"
 				"ypos"			"r121"
 				"wide"			"178"
-				"visible"		"1"
+				"visible"		"0"
+				"fgcolor"		"255 255 255 255"
 			}
 		}
 	}
