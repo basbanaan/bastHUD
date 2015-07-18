@@ -2,7 +2,7 @@
 {
 	"Credits"
 	{
-		"label" "BASTHUD v1.7 | Created by b4stian"
+		"label" "BASTHUD v1.7.1 | Created by b4stian"
 		"command" "engine showconsole; echo For updates visit basthud.huds.tf or teamfortress.tv/thread/18508/basthud"
 	}
 	"FavoriteServer"
