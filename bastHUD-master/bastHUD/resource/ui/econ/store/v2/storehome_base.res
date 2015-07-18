@@ -549,6 +549,31 @@
                         "armedBgColor_override" "10 10 10 255"
                         "depressedBgColor_override" "10 10 10 255"
         }
+        
+        "MarketPlaceButton"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MarketPlaceButton"
+		"xpos"			"c-285"
+		"ypos"			"c-50"
+		"zpos"			"2"
+		"wide"			"200"
+		"tall"			"23"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"#Store_MarketPlace"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"1"
+		"Command"		"marketplace"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+	}
 	
 	"TitleLabel"
 	{

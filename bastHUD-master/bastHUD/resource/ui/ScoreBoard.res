@@ -10,6 +10,7 @@
 		"tall"				"480"
 		"visible"			"1"
 		"enabled"			"1"
+		"medal_width"		"0"
 		"avatar_width"		"60"
 		"avatar_width_minmode"   "56"
 		"name_width"		"100"
@@ -19,6 +20,8 @@
 		"class_width"		"15"
 		"score_width"		"25"
 		"ping_width"		"25"
+		"stats_width"		"30"
+		"killstreak_width"	"20"
 	}
 	"BluePlayerList"
 	{
@@ -39,6 +42,7 @@
 		"linespacing"	    "16"
 		"linespacing_minmode" "18"
 		"fgcolor"		   "blue"
+		//"show_columns"	"1"
 
 		if_mvm
 		{
@@ -64,6 +68,7 @@
 		"linespacing"	"16"
 		"linespacing_minmode" "18"
 		"textcolor"		"red"
+		//"show_columns"	"1"
 
 		if_mvm
 		{
@@ -1103,10 +1108,10 @@
 			}
 		}
 
-		"KillsLabel"
+		"KillsLabel2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"KillsLabel"
+			"fieldName"		"KillsLabel2"
 			"font"			"Museo14"
 			"labelText"		"#TF_ScoreBoard_KillsLabel"
 			"textAlignment"	"east"
@@ -1127,10 +1132,10 @@
 				"visible"		"0"
 			}
 		}
-		"Kills"
+		"Kills2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Kills"
+			"fieldName"		"Kills2"
 			"font"			"Museo28"
 			"labelText"		"%kills%"
 			"textAlignment"	"east"
@@ -1175,10 +1180,10 @@
 			}	
 		}
 		
-		"DeathsLabel"
+		"DeathsLabel2"
 		{
 			"ControlName"		"CExLabel"
-			"fieldName"		"DeathsLabel"
+			"fieldName"		"DeathsLabel2"
 			"font"			"Museo14"
 			"labelText"		"#TF_ScoreBoard_DeathsLabel"
 			"textAlignment"		"west"
@@ -1199,10 +1204,10 @@
 				"visible"		"0"
 			}
 		}
-		"Deaths"
+		"Deaths2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Deaths"
+			"fieldName"		"Deaths2"
 			"font"			"Museo28"
 			"labelText"		"%deaths%"
 			"textAlignment"	"west"
@@ -1224,10 +1229,10 @@
 				"tall"		"41"
 			}
 		}
-		"AssistsLabel"
+		"AssistsLabel2"
 		{
 			"ControlName"		"CExLabel"
-			"fieldName"		"AssistsLabel"
+			"fieldName"		"AssistsLabel2"
 			"font"			"Museo10"
 			"labelText"		"#TF_ScoreBoard_AssistsLabel"
 			"fgcolor"		"255 255 255 255"
@@ -1248,10 +1253,10 @@
 				"ypos"		"r172"
 			}
 		}
-		"Assists"
+		"Assists2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Assists"
+			"fieldName"		"Assists2"
 			"font"			"Museo10"
 			"labelText"		"%assists%"
 			"fgcolor"		"255 255 255 255"
@@ -1272,10 +1277,10 @@
 				"ypos"		"r172"
 			}
 		}
-		"CapturesLabel"
+		"CapturesLabel2"
 		{
 			"ControlName"		"CExLabel"
-			"fieldName"		"CapturesLabel"
+			"fieldName"		"CapturesLabel2"
 			"font"		"Museo10"
 			"labelText"		"#TF_ScoreBoard_CapturesLabel"
 			"fgcolor"			"255 255 255 255"
@@ -1296,10 +1301,10 @@
 				"ypos"		"r162"
 			}
 		}
-		"Captures"
+		"Captures2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Captures"
+			"fieldName"		"Captures2"
 			"font"		"Museo10"
 			"labelText"		"%captures%"
 			"fgcolor"		"255 255 255 255"
@@ -1320,10 +1325,10 @@
 				"ypos"		"r162"
 			}
 		}
-		"DefensesLabel"
+		"DefensesLabel2"
 		{
 			"ControlName"		"CExLabel"
-			"fieldName"		"DefensesLabel"
+			"fieldName"		"DefensesLabel2"
 			"font"		"Museo10"
 			"labelText"		"#TF_ScoreBoard_DefensesLabel"
 			"fgcolor"		"255 255 255 255"
@@ -1344,10 +1349,10 @@
 				"ypos"		"r152"
 			}
 		}
-		"Defenses"
+		"Defenses2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Defenses"
+			"fieldName"		"Defenses2"
 			"font"		"Museo10"
 			"labelText"		"%defenses%"
 			"fgcolor"		"255 255 255 255"
@@ -1368,10 +1373,10 @@
 				"ypos"		"r152"
 			}
 		}
-		"DominationLabel"
+		"DominationLabel2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"DominationLabel"
+			"fieldName"		"DominationLabel2"
 			"font"			"Museo10"
 			"labelText"		"#TF_ScoreBoard_DominationLabel"
 			"fgcolor"		"255 255 255 255"
@@ -1392,10 +1397,10 @@
 				"ypos"		"r142"
 			}
 		}
-		"Domination"
+		"Domination2"
 		{
 			"ControlName"		"CExLabel"
-			"fieldName"		"Domination"
+			"fieldName"		"Domination2"
 			"font"		"Museo10"
 			"labelText"		"%dominations%"
 			"fgcolor"		"255 255 255 255"
@@ -1416,10 +1421,10 @@
 				"ypos"		"r142"
 			}
 		}
-		"RevengeLabel"
+		"RevengeLabel2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"RevengeLabel"
+			"fieldName"		"RevengeLabel2"
 			"font"		"Museo10"
 			"labelText"		"#TF_ScoreBoard_RevengeLabel"
 			"fgcolor"		"255 255 255 255"
@@ -1440,10 +1445,10 @@
 				"ypos"		"r132"
 			}
 		}
-		"Revenge"
+		"Revenge2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Revenge"
+			"fieldName"		"Revenge2"
 			"font"		"Museo10"
 			"labelText"		"%Revenge%"
 			"fgcolor"		"255 255 255 255"
@@ -1464,10 +1469,10 @@
 				"ypos"		"r132"
 			}
 		}
-		"DestructionLabel"
+		"DestructionLabel2"
 		{
 			"ControlName"		"CExLabel"
-			"fieldName"		"DestructionLabel"
+			"fieldName"		"DestructionLabel2"
 			"font"			"Museo10"
 			"labelText"		"#TF_ScoreBoard_DestructionLabel"
 			"fgcolor"		"255 255 255 255"
@@ -1488,10 +1493,10 @@
 				"ypos"		"r122"
 			}
 		}
-		"Destruction"
+		"Destruction2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Destruction"
+			"fieldName"		"Destruction2"
 			"font"		"Museo10"
 			"labelText"		"%destruction%"
 			"fgcolor"		"255 255 255 255"
@@ -1512,10 +1517,10 @@
 				"ypos"		"r122"
 			}
 		}
-		"HealingLabel"
+		"HealingLabel2"
 		{
 			"ControlName"		"CExLabel"
-			"fieldName"		"HealingLabel"
+			"fieldName"		"HealingLabel2"
 			"font"		"Museo10"
 			"labelText"		"#TF_ScoreBoard_HealingLabel"
 			"fgcolor"		"255 255 255 255"
@@ -1536,10 +1541,10 @@
 				"ypos"		"r172"
 			}
 		}		
-		"Healing"
+		"Healing2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Healing"
+			"fieldName"		"Healing2"
 			"font"		"Museo10"
 			"labelText"		"%healing%"
 			"fgcolor"		"255 255 255 255"
@@ -1560,10 +1565,10 @@
 				"ypos"		"r172"
 			}
 		}
-		"InvulnLabel"
+		"InvulnLabel2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"InvulnLabel"
+			"fieldName"		"InvulnLabel2"
 			"font"		"Museo10"
 			"labelText"		"#TF_ScoreBoard_InvulnLabel"
 			"fgcolor"		"255 255 255 255"
@@ -1584,10 +1589,10 @@
 				"ypos"		"r162"
 			}
 		}
-		"Invuln"
+		"Invuln2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Invuln"
+			"fieldName"		"Invuln2"
 			"font"		"Museo10"
 			"labelText"		"%invulns%"
 			"fgcolor"		"255 255 255 255"
@@ -1608,10 +1613,10 @@
 				"ypos"		"r162"
 			}
 		}
-		"HeadshotsLabel"
+		"HeadshotsLabel2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"HeadshotsLabel"
+			"fieldName"		"HeadshotsLabel2"
 			"font"		"Museo10"
 			"labelText"		"#TF_ScoreBoard_HeadshotsLabel"
 			"fgcolor"		"255 255 255 255"
@@ -1632,10 +1637,10 @@
 				"ypos"		"r152"
 			}
 		}
-		"Headshots"
+		"Headshots2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Headshots"
+			"fieldName"		"Headshots2"
 			"font"		"Museo10"
 			"labelText"		"%headshots%"
 			"fgcolor"		"255 255 255 255"
@@ -1656,10 +1661,10 @@
 				"ypos"		"r152"
 			}
 		}
-		"BackstabsLabel"
+		"BackstabsLabel2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"BackstabsLabel"
+			"fieldName"		"BackstabsLabel2"
 			"font"		"Museo10"
 			"labelText"		"#TF_ScoreBoard_BackstabsLabel"
 			"fgcolor"		"255 255 255 255"
@@ -1680,10 +1685,10 @@
 				"ypos"		"r142"
 			}
 		}
-		"Backstabs"
+		"Backstabs2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Backstabs"
+			"fieldName"		"Backstabs2"
 			"font"		"Museo10"
 			"labelText"		"%backstabs%"
 			"fgcolor"		"255 255 255 255"
@@ -1704,10 +1709,10 @@
 				"ypos"		"r142"
 			}
 		}
-		"TeleportsLabel"
+		"TeleportsLabel2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"TeleportsLabel"
+			"fieldName"		"TeleportsLabel2"
 			"font"		"Museo10"
 			"labelText"		"#TF_ScoreBoard_TeleportsLabel"
 			"fgcolor"		"255 255 255 255"
@@ -1728,10 +1733,10 @@
 				"ypos"		"r132"
 			}
 		}
-		"Teleports"
+		"Teleports2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Teleports"
+			"fieldName"		"Teleports2"
 			"font"		"Museo10"
 			"labelText"		"%teleports%"
 			"fgcolor"		"255 255 255 255"
@@ -1752,10 +1757,10 @@
 				"ypos"		"r132"
 			}
 		}
-		"BonusLabel"
+		"BonusLabel2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"BonusLabel"
+			"fieldName"		"BonusLabel2"
 			"font"		"Museo10"
 			"labelText"		"#TF_ScoreBoard_BonusLabel"
 			"fgcolor"		"32 32 32 255"
@@ -1776,10 +1781,10 @@
 				"ypos"		"r122"
 			}
 		}
-		"Bonus"
+		"Bonus2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Bonus"
+			"fieldName"		"Bonus2"
 			"font"		"Museo10"
 			"labelText"		"%bonus%"
 			"fgcolor"		"32 32 32 255"
@@ -1800,10 +1805,10 @@
 				"ypos"		"r122"
 			}
 		}
-		"DamageLabel"
+		"DamageLabel2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"DamageLabel"
+			"fieldName"		"DamageLabel2"
 			"font"		"Museo10"
 			"labelText"		"#TF_Scoreboard_Damage"
 			"fgcolor"		"255 255 255 255"
@@ -1824,10 +1829,10 @@
 				"ypos"		"r122"
 			}
 		}
-		"Damage"
+		"Damage2"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Damage"
+			"fieldName"		"Damage2"
 			"font"		"Museo10"
 			"labelText"		"%damage%"
 			"fgcolor"		"255 255 255 255"

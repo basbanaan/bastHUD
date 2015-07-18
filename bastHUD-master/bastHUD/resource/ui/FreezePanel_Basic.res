@@ -4,26 +4,26 @@
 	{
 		"ControlName"	"CItemModelPanel"
 		"fieldName"		"itempanel"
-		"xpos"			"r270"
-		"ypos"			"300"
-		"zpos"			"1"
-		"wide"			"270"
-		"tall"			"180"
+		"xpos"			"r200"
+		"ypos"			"0"
+		"zpos"			"10"
+		"wide"			"190"
+		"tall"			"100"
 		"visible"		"0"
 		"bgcolor_override"		"255 255 255 0"
 		"PaintBackgroundType"	"0"
 		
-		"model_xpos"		"10"
-		"model_center_y"	"1"
+		"model_ypos"		"10"
+		"model_center_x"	"1"
 		"model_wide"		"90"
-		"model_tall"		"55"
+		"model_tall"		"60"
 		
-		"text_xpos"		"90"
-		"text_wide"		"170"
+		"text_xpos"		"10"
+		"text_ypos"		"10"
 		"text_center"	"1"
 		
-		"max_text_height"	"90"
-		"padding_height"	"40"
+		"max_text_height"	"100"
+		"padding_height"	"10"
 		"resize_to_text"	"1"
 		"text_forcesize"	"2"
 		
@@ -32,6 +32,7 @@
 			"fieldName"		"itemmodelpanel"
 			"use_item_rendertarget" "1"
 			"useparentbg"		"1"
+			"inventory_image_type" "1" // High quality item image
 		}
 		
 		"ItemLabel"
