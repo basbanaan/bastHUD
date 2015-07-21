@@ -21,10 +21,9 @@ Teamfortress.tv thread: http://teamfortress.tv/thread/18508/basthud
 
 Screenshots: 
 
-* http://i.imgur.com/oQ1j4Jz.png -Main Menu
-* http://i.imgur.com/TLcWpeS.png -Class Selection
-* http://i.imgur.com/StOiQsu.png -Normal Health
-* http://i.imgur.com/C3abjo4.png -TargetID+ Medic HUD
-* http://i.imgur.com/bAh8CAk.png -Damage Numbers
+* http://i.imgur.com/ZaBsoqc.png -Main Menu
+* http://i.imgur.com/sLm4JuT.jpg -Class Selection
+* http://i.imgur.com/ey5bRb3.jpg -TargetID+ Medic HUD
+* http://i.imgur.com/2XLfR9k.jpg -Damage Numbers
 
 Full screenshot album: http://imgur.com/a/ab4rn
