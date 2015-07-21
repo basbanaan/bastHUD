@@ -4,7 +4,7 @@
 	{
 		"ControlName"	"CItemModelPanel"
 		"fieldName"		"itempanel"
-		"xpos"			"r200"
+		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"10"
 		"wide"			"190"
@@ -13,13 +13,13 @@
 		"bgcolor_override"		"255 255 255 0"
 		"PaintBackgroundType"	"0"
 		
-		"model_ypos"		"10"
-		"model_center_x"	"1"
+		"model_ypos"		"20"
+		"model_center_x"	"0"
 		"model_wide"		"90"
-		"model_tall"		"60"
+		"model_tall"		"55"
 		
-		"text_xpos"		"10"
-		"text_ypos"		"10"
+		"text_xpos"		"50"
+		"text_wide"		"170"
 		"text_center"	"1"
 		
 		"max_text_height"	"100"
@@ -30,7 +30,7 @@
 		"itemmodelpanel"
 		{
 			"fieldName"		"itemmodelpanel"
-			"use_item_rendertarget" "1"
+			"use_item_rendertarget" "0"
 			"useparentbg"		"1"
 			"inventory_image_type" "1" // High quality item image
 		}
@@ -53,6 +53,7 @@
 			"textAlignment"	"Left"
 			"dulltext"		"0"
 			"brighttext"	"0"
+			"fgcolor_override" "231 231 231 255"
 		}
 	}	
 	"FreezePanelBase"	

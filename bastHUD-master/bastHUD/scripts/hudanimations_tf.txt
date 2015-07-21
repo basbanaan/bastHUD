@@ -288,7 +288,7 @@ event HudHealthDyingPulse
 
     Animate PlayerStatusHealthValue     FgColor     "White"          Accel 0.0 0.0
     Animate ShadedBarThin   Alpha       "0"         Accel 0.0 0.0
-    Animate PlayerStatusHealthValueShadow  FgColor     "255 85 0 255"       Linear 0.0 0.0
+    Animate PlayerStatusHealthValueShadow  FgColor     "LowColor"       Linear 0.0 0.0
     Animate PlayerStatusHealthImageOverheal5    Alpha       "135"           Accel 0.0 0.0
     Animate ShadedBarThinLow    Alpha       "255"           Accel 0.0 0.0
 
@@ -877,7 +877,7 @@ event NotificationsPresentBlinkStop
 
 event DamagedPlayer
 {
-    
+
 }
 
 event SpyWarningFlash

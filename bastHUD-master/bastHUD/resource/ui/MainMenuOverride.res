@@ -108,7 +108,6 @@
 	    	"tabPosition"	"0"	
 	    	"fillcolor"		"255 255 255 255"
 	    	"PaintBackgroundType"	"0"
-	    	"border"        "bastBorder2"
 		}
 		"Credits"
 		{
@@ -393,9 +392,8 @@
 		"fillcolor"		"0 0 0 0"
 		"visible"		"0"
 		"enabled"		"1"
-		"border"        "bastBorder2"
 	}
-
+	
 	"ButtonsBG"
 	{
 		"ControlName"	"ImagePanel"
@@ -408,7 +406,6 @@
 		"fillcolor"		"234 234 234 255"
 		"visible"		"1"
 		"enabled"		"1"
-		"border"        "bastBorder2"
 	}
 
 	"TFLogoImage"

@@ -466,13 +466,12 @@
 		"bgcolor_override"		"255 255 255 0"
 		"PaintBackgroundType"	"0"
 		
-		"model_ypos"		"10"
-		"model_center_x"	"1"
+		"model_ypos"		"20"
+		"model_center_x"	"0"
 		"model_wide"		"90"
-		"model_tall"		"60"
+		"model_tall"		"55"
 		
-		"text_xpos"		"10"
-		"text_ypos"		"10"
+		"text_xpos"		"50"
 		"text_wide"		"170"
 		"text_center"	"1"
 		
@@ -507,27 +506,9 @@
 			"textAlignment"	"Left"
 			"dulltext"		"0"
 			"brighttext"	"0"
+			"fgcolor_override" "231 231 231 255"
 		}
 		
-		"attriblabel"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"attriblabel"
-			"font"			"ItemFontAttribLarge"
-			"xpos"			"0"
-			"ypos"			"30"
-			"zpos"			"2"
-			"wide"			"140"
-			"tall"			"60"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"%attriblist%"
-			"textAlignment"	"south"
-			"fgcolor"		"235 226 202 255"
-			"centerwrap"	"1"
-		}
 		"spectator_extras"
 	{
 		"ControlName"	"EditablePanel"

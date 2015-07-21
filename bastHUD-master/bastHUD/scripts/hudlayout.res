@@ -234,7 +234,7 @@
         "visible"   "0"
         "enabled"   "1"
 
-        "xpos"      "c-19"
+        "xpos"      "c-15"
         "ypos"      "c-13"
         "zpos"      "2"
         
@@ -250,7 +250,7 @@
         // "fogCrosshairSmooth"   - Antialiased, not outlined
         
 
-        "labeltext" "n"
+        "labeltext" "g"
         //
         // Choose your crosshair
         // 
@@ -258,7 +258,7 @@
 
         "textAlignment" "center"
         
-        "fgcolor"   "255 255 255 255"
+        "fgcolor"   "0 0 0 0"
     }
 //
 //###################
@@ -299,13 +299,13 @@
         "visible"       "0"
         "enabled"       "1"
         "zpos"          "1"
-        "xpos"          "c-12"
-        "ypos"          "c-15"
+        "xpos"          "c-11"
+        "ypos"          "c-9"
         "wide"          "24"
         "tall"          "25"
-        "font"          "CrossHairNormal"
-        "labelText"     ""
-        "fgcolor"       "65 235 0 255"
+        "font"          "Museo20"
+        "labelText"     "(   )"
+        "fgcolor"       "0 0 0 225"
         "textAlignment" "center"
     }
 
