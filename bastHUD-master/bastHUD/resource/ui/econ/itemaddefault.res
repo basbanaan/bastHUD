@@ -1,5 +1,12 @@
 "Resource/UI/econ/CyclingAdContainer.res"
 {
+    "ad"
+	{
+		"fieldname"		"ad"
+		"proportionaltoparent"	"1"
+		"wide"					"f0"
+		"tall"					"f0"
+	}
 	"Background"
 	{
 		"ControlName"	"EditablePanel"

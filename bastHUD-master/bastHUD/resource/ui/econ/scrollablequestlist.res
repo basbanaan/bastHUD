@@ -13,16 +13,16 @@
 		"enabled"		"1"
 		"proportionaltoparent" "1"
 
-		"CyclingAd"
+		"ItemAd"
 		{
 			"ControlName"			"CCyclingAdContainerPanel"
-			"fieldName"				"CyclingAd"
+			"fieldName"				"ItemAd"
 			"xpos"					"cs-0.5"
 			"ypos"					"r80"
 			"zpos"					"100"
 			"wide"					"p0.9"
-			"tall"					"50"
-			"visible"				"1"
+			"tall"					"60"
+			"visible"				"0"
 			"enabled"				"1"
 			"scaleImage"			"1"
 			"proportionaltoparent"	"1"
@@ -34,10 +34,6 @@
 				"0"
 				{
 					"item"		"Unused Summer 2015 Operation Pass"
-						
-					"wide"		"f0"
-					"tall"		"f0"
-					"proportionaltoparent"	"1"
 					"show_market"	"0"
 				}
 			}
