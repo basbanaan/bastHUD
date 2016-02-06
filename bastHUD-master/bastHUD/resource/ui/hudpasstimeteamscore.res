@@ -43,6 +43,22 @@
 		"scaleImage"	"1"	
 	}
 	
+	"AllSideBG"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"AllSideBG"
+		"xpos"			"c-120"
+		"ypos"			"r53"
+		"zpos"			"1"
+		"wide"			"240"
+		"tall"			"30"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"
+		"fillcolor"		"0 0 0 175"
+		"border"        "bastBorder"
+	}
+	
 	"BluePanelBG"
 	{
 		"ControlName"	"ImagePanel"
@@ -52,10 +68,11 @@
 		"zpos"			"0"
 		"wide"			"120"
 		"tall"			"30"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"scaleImage"	"1"
 		"fillcolor"		"0 0 0 175"
+		"border"        "bastBorder"
 	}
 	
 	"RedPanelBG"
@@ -67,10 +84,11 @@
 		"zpos"			"0"
 		"wide"			"120"
 		"tall"			"30"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"scaleImage"	"1"
 		"fillcolor"		"0 0 0 175"
+		"border"        "bastBorder"
 	}
 		
 	"OutlineBG"
@@ -102,25 +120,26 @@
 		"textinsetx"	"5"
 		"textAlignment"	"west"	
 		"labelText"		"%bluescore%"
-		"font"			"cafe16"
-		"fgcolor"		"BasBlueSolid"
+		"font"			"Medium18"
+		"fgcolor"		"72 107 141 200"
 	}	
 		
 	"BlueScoreShadow"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"BlueScoreShadow"
-		"xpos"			"c-118"
-		"ypos"			"r66"
-		"zpos"			"7"
-		"wide"			"80"
-		"tall"			"35"
-		"visible"		"0"
-		"enabled"		"0"
+		"xpos"			"c-119"
+		"ypos"			"r59"
+		"zpos"			"8"
+		"wide"			"120"
+		"tall"			"40"
+		"visible"		"1"
+		"enabled"		"1"
+		"textinsetx"	"5"
 		"textAlignment"	"west"	
 		"labelText"		"%bluescore%"
-		"font"			"HudFontMediumBold"
-		"fgcolor"		"Black"
+		"font"			"Medium18"
+		"fgcolor"		"32 32 32 255"
 	}	
 							
 	"RedScore"
@@ -137,25 +156,26 @@
 		"textinsetx"	"5"
 		"textAlignment"	"east"	
 		"labelText"		"%redscore%"
-		"font"			"cafe16"
-		"fgcolor"		"BasRedSolid"		
+		"font"			"Medium18"
+		"fgcolor"		"189 55 56 200"		
 	}	
 		
 	"RedScoreShadow"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"RedScoreShadow"
-		"xpos"			"c44"
-		"ypos"			"r66"
-		"zpos"			"7"
-		"wide"			"80"
-		"tall"			"35"
-		"visible"		"0"
+		"xpos"			"c1"
+		"ypos"			"r59"
+		"zpos"			"8"
+		"wide"			"120"
+		"tall"			"40"
+		"visible"		"1"
 		"enabled"		"1"
+		"textinsetx"	"5"
 		"textAlignment"	"east"	
 		"labelText"		"%redscore%"
-		"font"			"HudFontBig"
-		"fgcolor"		"Black"		
+		"font"			"Medium18"
+		"fgcolor"		"32 32 32 255"		
 	}
 
 	"PlayingToCluster"
@@ -186,7 +206,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"font"			"HudFontSmallBold"
-			"fgcolor"		"BasWhite"
+			"fgcolor"		"BuffedColor"
 		}	
 				
 		"PlayingToBG"
@@ -218,6 +238,7 @@
 			"enabled"		"1"
 			"scaleImage"	"1"
 			"fillcolor"		"32 32 32 200"
+			"border"        "bastBorder"
 		}
 	}
 }
