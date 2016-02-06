@@ -4323,22 +4323,38 @@
 				{
 					"0"
 					{
-						"item"		"Halloween 2015 Key"
+						"item"		 	"Unused Operation Tough Break Pass"
 						"show_market"	"0"
 					}
 					"1"
 					{
-						"item"		"Halloween 2015 case"
+						"item"		"Tough Break Case 01 Pyroland"
+						"show_market"	"1"
 					}
 					"2"
 					{
-						"item"		"Taunt: Zoomin' Broom"
-						"show_market"	"0"
+						"item"		"Tough Break Case 02 Warbirds"
+						"show_market"	"1"
 					}
 					"3"
 					{
-						"item"		"Taunt: Soldier's Requiem"
-      					"show_market"	"0"
+						"item"		"Tough Break Key"
+						"show_market"	"0"
+					}
+					"4"
+					{
+						"item"		"Tough Break Cosmetic Case"
+						"show_market"	"1"
+					}
+					"5"
+					{
+						"item"		"Tough Break Cosmetic Key"
+						"show_market"	"0"
+					}
+					"5"
+					{
+						"item"		"Taunt: Aerobic Taunt"
+						"show_market"	"0"
 					}
 				}
 			}

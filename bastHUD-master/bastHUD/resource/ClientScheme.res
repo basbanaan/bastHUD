@@ -3274,6 +3274,20 @@ Scheme
 				"additive"	"0"
 			}
 		}
+		"ScoreboardTeamNameNew"
+		{
+			"1"
+			{
+				"name"		"MuseoSansCyrl-500"
+				"tall"		"14"
+				"tall_hidef"	"24"
+				"tall_lodef"	"24"
+				"weight"	"500"
+				"range"		"0x0000 0x007F"	//	Basic Latin
+				"antialias" "1"
+				"additive"	"0"
+			}
+		}
 		"ScoreboardTeamNameLarge"
 		{
 			"1"
@@ -3282,6 +3296,19 @@ Scheme
 				"tall"		"28"
 				"antialias" "1"
 				"additive"	"0"
+			}
+		}
+		
+		"ScoreboardTeamScoreNew"
+ 		{
+			"1"
+			{
+				"name"		"MuseoSansCyrl-500"
+				"tall"		"36"
+				"tall_hidef"	"48"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
 			}
 		}
 

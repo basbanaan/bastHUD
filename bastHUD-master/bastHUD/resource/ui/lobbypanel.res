@@ -1826,6 +1826,60 @@
 			"selectionTextColor_override" "235 226 202 255"
 			"defaultSelectionBG2Color_override" "0 0 0 0"
 		}
+		
+		"LevelLabel"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"RankLabel"
+			"xpos"			"60"
+			"ypos"			"44"
+			"zpos"			"0"
+			"wide"			"100"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"HudFontSmallestBold"
+			//"fgcolor_override"	"89 81 71 255"
+			"textAlignment"	"west"
+			"labelText"		"LEVEL:"
+		}
+
+		"LevelProgress"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"LevelLabel"
+			"xpos"			"130"
+			"ypos"			"44"
+			"zpos"			"0"
+			"wide"			"20"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"HudFontSmallBold"
+			"fgcolor_override"	"250 114 45 255"
+			"textAlignment"	"west"
+			"labelText"		"%level%"
+		}
+
+		"LevelProgressMeter"
+		{	
+			"ControlName"	"ContinuousProgressBar"
+			"fieldName"		"LevelProgressMeter"
+			"font"			"HudFontSmallestBold"
+			"xpos"			"145"
+			"ypos"			"49"
+			"zpos"			"2"
+			"wide"			"90"
+			"tall"			"9"				
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"textAlignment"	"center"
+			"dulltext"		"0"
+			"brighttext"	"0"
+		}	
+
 
 		// Default image
 		"ModeImage"
