@@ -1,201 +1,205 @@
 // sample animation script
+// sample animation script
 //
 //
 // commands:
-//  Animate <panel name> <variable> <target value> <interpolator> <start time> <duration>
-//      variables:
-//          FgColor
-//          BgColor
-//          Position
-//          Size
-//          Blur        (hud panels only)
-//          TextColor   (hud panels only)
-//          Ammo2Color  (hud panels only)
-//          Alpha       (hud weapon selection only)
-//          SelectionAlpha  (hud weapon selection only)
-//          TextScan    (hud weapon selection only)
+//	Animate <panel name> <variable> <target value> <interpolator> <start time> <duration>
+//		variables:
+//			FgColor
+//			BgColor
+//			Position
+//			Size
+//			Blur		(hud panels only)
+//			TextColor	(hud panels only)
+//			Ammo2Color	(hud panels only)
+//			Alpha		(hud weapon selection only)
+//			SelectionAlpha  (hud weapon selection only)
+//			TextScan	(hud weapon selection only)
 //
-//      interpolator:
-//          Linear
-//          Accel - starts moving slow, ends fast
-//          Deaccel - starts moving fast, ends slow
-//          Spline - simple ease in/out curve
-//          Pulse - < freq > over the duration, the value is pulsed (cosine) freq times ending at the dest value (assuming freq is integral)
-//          Flicker - < randomness factor 0.0 to 1.0 > over duration, each frame if random # is less than factor, use end value, otherwise use prev value
+//		interpolator:
+//			Linear
+//			Accel - starts moving slow, ends fast
+//			Deaccel - starts moving fast, ends slow
+//			Spline - simple ease in/out curve
+//			Pulse - < freq > over the duration, the value is pulsed (cosine) freq times ending at the dest value (assuming freq is integral)
+//			Flicker - < randomness factor 0.0 to 1.0 > over duration, each frame if random # is less than factor, use end value, otherwise use prev value
+//			Gain - < bias > Lower bias values bias towards 0.5 and higher bias values bias away from it.
+//			Bias - < bias > Lower values bias the curve towards 0 and higher values bias it towards 1.
 //
-//  RunEvent <event name> <start time>
-//      starts another even running at the specified time
+//	RunEvent <event name> <start time>
+//		starts another even running at the specified time
 //
-//  StopEvent <event name> <start time>
-//      stops another event that is current running at the specified time
+//	StopEvent <event name> <start time>
+//		stops another event that is current running at the specified time
 //
-//  StopAnimation <panel name> <variable> <start time>
-//      stops all animations refering to the specified variable in the specified panel
+//	StopAnimation <panel name> <variable> <start time>
+//		stops all animations refering to the specified variable in the specified panel
 //
-//  StopPanelAnimations <panel name> <start time>
-//      stops all active animations operating on the specified panel
+//	StopPanelAnimations <panel name> <start time>
+//		stops all active animations operating on the specified panel
 //
 //  SetFont <panel name> <fontparameter> <fontname from scheme> <set time> 
 //
-//  SetTexture <panel name> <textureidname> <texturefilename> <set time>
+//	SetTexture <panel name> <textureidname> <texturefilename> <set time>
 //
 //  SetString <panel name> <string varname> <stringvalue> <set time>
 
 event LevelInit
 {
 }
+
 event OpenWeaponSelectionMenu
 {
-    StopEvent CloseWeaponSelectionMenu  0.0
-    StopEvent WeaponPickup              0.0
+	StopEvent CloseWeaponSelectionMenu	0.0
+	StopEvent WeaponPickup				0.0
 
-    // make the display visible
-    Animate HudWeaponSelection Alpha        "128"       Linear 0.0 0.1
-    Animate HudWeaponSelection SelectionAlpha   "255"   Linear 0.0 0.1
-    Animate HudWeaponSelection FgColor      "FgColor"   Linear 0.0 0.1
-    //Animate HudWeaponSelection TextColor  "BrightFg"  Linear 0.0 0.1
-    Animate HudWeaponSelection TextScan     "1"         Linear 0.0 0.1
+	// make the display visible
+	Animate HudWeaponSelection Alpha 		"128"		Linear 0.0 0.1
+	Animate HudWeaponSelection SelectionAlpha 	"255"	Linear 0.0 0.1
+	Animate HudWeaponSelection FgColor		"FgColor"	Linear 0.0 0.1
+	//Animate HudWeaponSelection TextColor	"BrightFg"	Linear 0.0 0.1
+	Animate HudWeaponSelection TextScan		"1" 		Linear 0.0 0.1
 }
 
 event CloseWeaponSelectionMenu
 {
-    StopEvent CloseWeaponSelectionMenu  0.0
-    StopEvent WeaponPickup              0.0
+	StopEvent CloseWeaponSelectionMenu	0.0
+	StopEvent WeaponPickup				0.0
 
-    // make the display visible
-    Animate HudWeaponSelection Alpha        "128"       Linear 0.0 0.1
-    Animate HudWeaponSelection SelectionAlpha   "255"   Linear 0.0 0.1
-    Animate HudWeaponSelection FgColor      "FgColor"   Linear 0.0 0.1
-    //Animate HudWeaponSelection TextColor  "BrightFg"  Linear 0.0 0.1
-    Animate HudWeaponSelection TextScan     "1"         Linear 0.0 0.1
+	// make the display visible
+	Animate HudWeaponSelection Alpha 		"128"		Linear 0.0 0.1
+	Animate HudWeaponSelection SelectionAlpha 	"255"	Linear 0.0 0.1
+	Animate HudWeaponSelection FgColor		"FgColor"	Linear 0.0 0.1
+	//Animate HudWeaponSelection TextColor	"BrightFg"	Linear 0.0 0.1
+	Animate HudWeaponSelection TextScan		"1" 		Linear 0.0 0.1
 }
 
 
 event MenuOpen
 {
-    StopEvent   MenuClose 0.0 
+	StopEvent	MenuClose 0.0 
 
-    // fade in
-    Animate HudMenu Alpha       "255"       Linear 0.0 0.1
-    Animate HudMenu SelectionAlpha  "255"       Linear 0.0 0.1
-    Animate HudMenu FgColor     "FgColor"       Linear 0.0 0.1
-    Animate HudMenu MenuColor       "MenuColor" Linear  0.0 0.1
-    Animate HudMenu ItemColor       "ItemColor" Linear 0.0 0.1
-    Animate HudMenu TextScan        "1"     Linear 0.0 0.1
+	// fade in
+	Animate HudMenu Alpha 		"255"		Linear 0.0 0.1
+	Animate HudMenu SelectionAlpha 	"255"		Linear 0.0 0.1
+	Animate HudMenu FgColor		"FgColor"		Linear 0.0 0.1
+	Animate HudMenu MenuColor		"MenuColor"	Linear  0.0 0.1
+	Animate HudMenu ItemColor		"ItemColor"	Linear 0.0 0.1
+	Animate HudMenu TextScan		"1"		Linear 0.0 0.1
 
-    // Undo any blur
-    Animate HudMenu     Blur        "1"         Linear  0.0     0.01
+	// Undo any blur
+	Animate HudMenu		Blur		"1"			Linear	0.0		0.01
 }
 
 event MenuClose
-{   
-    // Hide it
-    Animate HudMenu Alpha       "0" Linear 0.0 1
-    Animate HudMenu SelectionAlpha  "0" Linear 0.0 1
-    Animate HudMenu FgColor     "0 0 0 0" Linear 0.0 1
-    Animate HudMenu MenuColor       "0 0 0 0" Linear 0.0 1
-    Animate HudMenu ItemColor       "0 0 0 0" Linear 0.0 1
+{	
+	// Hide it
+	Animate HudMenu Alpha 		"0" Linear 0.0 1
+	Animate HudMenu SelectionAlpha 	"0" Linear 0.0 1
+	Animate HudMenu FgColor		"0 0 0 0" Linear 0.0 1
+	Animate HudMenu MenuColor		"0 0 0 0" Linear 0.0 1
+	Animate HudMenu ItemColor		"0 0 0 0" Linear 0.0 1
 }
 
 event MenuPulse
 {
-    Animate HudMenu     Blur        "7"         Linear  0.0     0.1
-    Animate HudMenu     Blur        "2"         Deaccel 0.1     0.1
-    Animate HudMenu     Blur        "7"         Linear  0.2     0.1
-    Animate HudMenu     Blur        "2"         Deaccel 0.3     0.1
-    Animate HudMenu     Blur        "7"         Linear  0.4     0.1
-    Animate HudMenu     Blur        "2"         Deaccel 0.5     0.1
-    Animate HudMenu     Blur        "1"         Deaccel 0.6     0.4
+	Animate HudMenu		Blur		"7"			Linear	0.0		0.1
+	Animate HudMenu		Blur		"2"			Deaccel	0.1		0.1
+	Animate HudMenu		Blur		"7"			Linear	0.2		0.1
+	Animate HudMenu		Blur		"2"			Deaccel	0.3		0.1
+	Animate HudMenu		Blur		"7"			Linear	0.4		0.1
+	Animate HudMenu		Blur		"2"			Deaccel	0.5		0.1
+	Animate	HudMenu		Blur		"1"			Deaccel	0.6		0.4
 }
 
 event TimerIncrement
 {
-    Animate HudTimer        Blur        "7"         Linear  0.0 0.1
-    Animate HudTimer        Blur        "2"         Deaccel 0.1     0.8
-    Animate HudTimer        Blur        "0"         Deaccel 1.1     1.5
+	Animate HudTimer		Blur		"7"			Linear	0.0	0.1
+	Animate HudTimer		Blur		"2"			Deaccel	0.1		0.8
+	Animate	HudTimer		Blur		"0"			Deaccel	1.1		1.5
 }
 
 event TimerDecrement
 {
-    Animate HudTimer        Blur        "7"         Linear  0.0 0.1
-    Animate HudTimer        Blur        "2"         Deaccel 0.1     0.8
-    Animate HudTimer        Blur        "0"         Deaccel 1.1     1.5
+	Animate HudTimer		Blur		"7"			Linear	0.0	0.1
+	Animate HudTimer		Blur		"2"			Deaccel	0.1		0.8
+	Animate	HudTimer		Blur		"0"			Deaccel	1.1		1.5
 }
 
 
 event ResourceIncrement
 {
-    Animate HudResources        Blur            "3"         Linear  0.0 0.0
-    Animate HudResources        PulseAmount     "0"         Linear  0.0 0.01
-    Animate HudResources        Blur            "1"         Deaccel 0.1 1.5
-    Animate HudResources        PulseAmount     "1"         Linear  0.1 2
+	Animate HudResources		Blur			"3"			Linear	0.0	0.0
+	Animate HudResources		PulseAmount		"0"			Linear	0.0	0.01
+	Animate HudResources		Blur			"1"			Deaccel	0.1	1.5
+	Animate HudResources		PulseAmount		"1"			Linear	0.1	2
 
-    Animate HudResources        PulseAmount     "0"         Linear  2   2
+	Animate HudResources		PulseAmount		"0"			Linear	2	2
 }
 
 event ResourceDecrement
 {
-    Animate HudResources        Blur            "7"         Linear  0.0 0.0
-    Animate HudResources        PulseAmount     "0"         Linear  0.0 0.01
-    Animate HudResources        Blur            "1"         Deaccel 0.1 1.5
-    Animate HudResources        PulseAmount     "1"         Linear  0.1 2
+	Animate HudResources		Blur			"7"			Linear	0.0	0.0
+	Animate HudResources		PulseAmount		"0"			Linear	0.0	0.01
+	Animate HudResources		Blur			"1"			Deaccel	0.1	1.5
+	Animate HudResources		PulseAmount		"1"			Linear	0.1	2
 
-    Animate HudResources        PulseAmount     "0"         Linear  2   2
+	Animate HudResources		PulseAmount		"0"			Linear	2	2
 }
 
 event ResourcePickup
 {
-    Animate HudResourcesPickup  Alpha           "255"           Linear  0   0
-    Animate HudResourcesPickup  Position        "80 r40"        Linear  0   0
-    Animate HudResourcesPickup  Position        "80 r120"       Deaccel 0   1
-    Animate HudResourcesPickup  Blur            "7"         Deaccel 0   0.2
-    Animate HudResourcesPickup  Alpha           "0"         Deaccel .8  0.2
-    Animate HudResourcesPickup  Blur        "1"         Deaccel 0.2 0.3
+	Animate HudResourcesPickup	Alpha			"255"			Linear	0	0
+	Animate HudResourcesPickup	Position		"80 r40"		Linear	0	0
+	Animate HudResourcesPickup	Position		"80 r120"		Deaccel	0	1
+	Animate HudResourcesPickup	Blur			"7"			Deaccel 0	0.2
+	Animate HudResourcesPickup	Alpha			"0"			Deaccel	.8	0.2
+	Animate	HudResourcesPickup	Blur		"1"			Deaccel	0.2	0.3
 }
 
 event HintMessageShow
 {
-    Animate HudHintDisplay HintSize "1"     Deaccel 0.0 0.3
-    Animate HudHintDisplay FgColor  "FgColor"   Linear 0.4      0.4
+	Animate HudHintDisplay HintSize	"1"		Deaccel 0.0	0.3
+	Animate HudHintDisplay FgColor	"FgColor" 	Linear 0.4      0.4
 
-    // flash text
-    Animate HudHintDisplay FgColor  "FgColor"   Linear 1.5 0.01
-    Animate HudHintDisplay FgColor  "255 220 0 255" Linear 2.0 0.2
-    Animate HudHintDisplay FgColor  "FgColor"   Linear 2.2 0.2
-    Animate HudHintDisplay FgColor  "255 220 0 255" Linear 3.0 0.2
-    Animate HudHintDisplay FgColor  "FgColor"   Linear 3.2 0.2
+	// flash text
+	Animate HudHintDisplay FgColor	"FgColor" 	Linear 1.5 0.01
+	Animate HudHintDisplay FgColor	"255 220 0 255" Linear 2.0 0.2
+	Animate HudHintDisplay FgColor	"FgColor" 	Linear 2.2 0.2
+	Animate HudHintDisplay FgColor	"255 220 0 255" Linear 3.0 0.2
+	Animate HudHintDisplay FgColor	"FgColor" 	Linear 3.2 0.2
 
-    // hide the panel after a while 
-    Animate HudHintDisplay FgColor  "255 220 0 0"   Linear  10.0    0.2
-    Animate HudHintDisplay HintSize "0"     Deaccel 10.2    0.3
+	// hide the panel after a while	
+	Animate HudHintDisplay FgColor	"255 220 0 0"   Linear  10.0 	0.2
+	Animate HudHintDisplay HintSize	"0"		Deaccel 10.2	0.3
 }
 
 
 event HintMessageHide
 {
-    Animate HudHintDisplay FgColor  "255 220 0 0"   Linear  0.0     0.2
-    Animate HudHintDisplay HintSize "0"     Deaccel 0.2 0.3
+	Animate HudHintDisplay FgColor	"255 220 0 0"   Linear  0.0 	0.2
+	Animate HudHintDisplay HintSize	"0"		Deaccel 0.2	0.3
 }
 
 event KeyHintMessageShow
 {
-    // show the hints
-    Animate HudHintKeyDisplay Alpha 255 Linear 0.0 0.5
+	// show the hints
+	Animate HudHintKeyDisplay Alpha	255 Linear 0.0 0.5
 
-    // flash text
-    Animate HudHintKeyDisplay FgColor   "FgColor"   Linear 0.0 0.01
-    Animate HudHintKeyDisplay FgColor   "255 220 0 255" Linear 0.5 0.2
-    Animate HudHintKeyDisplay FgColor   "FgColor"   Linear 0.7 0.2
-    Animate HudHintKeyDisplay FgColor   "255 220 0 255" Linear 1.5 0.2
-    Animate HudHintKeyDisplay FgColor   "FgColor"   Linear 1.7 0.2
+	// flash text
+	Animate HudHintKeyDisplay FgColor	"FgColor" 	Linear 0.0 0.01
+	Animate HudHintKeyDisplay FgColor	"255 220 0 255" Linear 0.5 0.2
+	Animate HudHintKeyDisplay FgColor	"FgColor" 	Linear 0.7 0.2
+	Animate HudHintKeyDisplay FgColor	"255 220 0 255" Linear 1.5 0.2
+	Animate HudHintKeyDisplay FgColor	"FgColor" 	Linear 1.7 0.2
 
-    // hide the panel after a while 
-    Animate HudHintKeyDisplay Alpha 0 Linear 12.0 1.0
+	// hide the panel after a while	
+	Animate HudHintKeyDisplay Alpha	0 Linear 12.0 1.0
 }
 
 event KeyHintMessageHide
 {
-    Animate HudHintKeyDisplay Alpha 0 Linear 0.0 0.5
+	Animate HudHintKeyDisplay Alpha	0 Linear 0.0 0.5
 }
 
 //===========================================
@@ -1222,14 +1226,13 @@ event QuestItem_Complete_Progress
 
 event QuestItem_Options_Flash
 {
-	Animate OptionsButton FgColor LightOrange	        Linear 0	 0.1
-	Animate OptionsButton FgColor "221 221 221 255"		Linear 0.1	 0.1
-	Animate OptionsButton FgColor LightOrange	        Linear 0.2	 0.1
-	Animate OptionsButton FgColor "221 221 221 255"		Linear 0.3	 0.1
-	Animate OptionsButton FgColor LightOrange	        Linear 0.4	 0.1
-	Animate OptionsButton FgColor "221 221 221 255"		Linear 0.5	 0.1
+	Animate OptionsButton FgColor LightOrange	Linear 0	 0.1
+	Animate OptionsButton FgColor TanLight		Linear 0.1	 0.1
+	Animate OptionsButton FgColor LightOrange	Linear 0.2	 0.1
+	Animate OptionsButton FgColor TanLight		Linear 0.3	 0.1
+	Animate OptionsButton FgColor LightOrange	Linear 0.4	 0.1
+	Animate OptionsButton FgColor TanLight		Linear 0.5	 0.1
 }
-
 
 //--------------------------------------------------------------------------
 event QuestItem_Expand
@@ -1237,7 +1240,7 @@ event QuestItem_Expand
 	Animate FrontFolderContainer		ypos 240	Gain 0.75 0 0.4
 	RunEventChild IdentifyButtonContainer QuestItem_Identify_Expand 0
 	RunEventChild TurnInContainer QuestItem_Complete_Expand 0
-	
+
 	SetInputEnabled FrontFolderContainer 0 0
 	RunEvent QuestItem_Options_Flash 1
 }
@@ -1247,7 +1250,7 @@ event QuestItem_Collapse
 	Animate FrontFolderContainer		ypos 0	Gain 0.75 0 0.4
 	RunEventChild IdentifyButtonContainer QuestItem_Identify_Collapse 0
 	RunEventChild TurnInContainer QuestItem_Complete_Collapse 0
-	
+
 	SetInputEnabled FrontFolderContainer 1 0
 }
 
@@ -1261,12 +1264,11 @@ event QuestItem_Reset
 	Animate FrontFolderContainer		ypos 0	Linear 0 0
 	RunEventChild IdentifyButtonContainer QuestItem_Identify_Collapse 0
 	RunEventChild TurnInContainer QuestItem_Complete_Collapse 0
-	
+
 	SetInputEnabled FrontFolderContainer 1 0
 }
 
 //--------------------------------------------------------------------------
-
 event QuestItem_Operation2_Expand
 {
 	StopEvent QuestItem_Operation2_Collapse 0
@@ -1340,7 +1342,6 @@ event QuestItem_Expand_Halloween
 
 	// Immediately disable the mouse proxy so the inactive hint goes away
 	RunEventChild FrontFolderContainer	QuestItem_DisableFrontMouse 0
-	
 	SetInputEnabled FrontFolderContainer 0 0
 
 	// Slide the sleeve
@@ -1377,7 +1378,6 @@ event QuestItem_Collapse_Halloween
 	Animate ReadyToTurnInStatus xpos 10		Bias 0.8 0.5 0.2
 	Animate InactiveStatus		xpos 10		Bias 0.8 0.5 0.2
 	Animate EncodedStatus		xpos 10		Bias 0.8 0.5 0.2
-
 	SetInputEnabled FrontFolderContainer 1 0
 }
 
@@ -1448,7 +1448,7 @@ event QuestItem_Back_NoneSelected
 	StopEvent QuestItem_Back_Selected 0
 	StopEvent QuestItem_Back_OtherSelected 0
 
-	Animate			MainContainer		ypos 0	Gain 0.75 0 0.4
+	Animate			MainContainer		ypos 0		Gain 0.75 0 0.4
 }
 
 //--------------------------------------------------------------------------
