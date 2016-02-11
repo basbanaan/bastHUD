@@ -1,6 +1,6 @@
 Thanks for installing bastHUD.
 
-Version: 1.7
+Version: 1.7.5
 
 Notes:
 
