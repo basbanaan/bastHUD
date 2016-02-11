@@ -207,28 +207,27 @@ event KeyHintMessageHide
 //Health Bonus Pulse
 event HudHealthBonusPulse
 {
-    Animate PlayerStatusHealthBonusImage    Alpha       "125"               Linear 0.0 0.2
-    Animate PlayerStatusHealthBonusImage    Alpha       "0"         Linear 0.2 0.4
+    Animate PlayerStatusHealthBonusImage         Alpha       "125"                   Linear 0.0 0.2
+    Animate PlayerStatusHealthBonusImage         Alpha       "0"                     Linear 0.2 0.4
 
-    Animate PlayerStatusHealthValue     FgColor     "White"           Accel 0.0 0.0
-    Animate ShadedBarThin   Alpha       "0"         Accel 0.0 0.0
-    Animate PlayerStatusHealthValueShadow  FgColor     "0 221 255 255"         Linear 0.0 0.0  
-    Animate PlayerStatusHealthValueSpecShadow2 FgColor "10 10 10 255"        Linear 0.0 0.0
-    Animate PlayerStatusHealthImageOverheal     Alpha       "255"           Accel 0.0 0.0
-    Animate ShadedBarThinBuff   Alpha       "255"           Accel 0.0 0.0
-    Animate PlayerStatusHealthValueCam  FgColor     "BuffedColor"           Accel 0.0 0.0
+    Animate PlayerStatusHealthValue              FgColor     "White"                 Accel 0.0 0.0
+    Animate ShadedBarThin   Alpha                "0"         Accel 0.0 0.0
+    Animate PlayerStatusHealthValueShadow        FgColor     "30 235 255 255"        Linear 0.0 0.075 
+    Animate PlayerStatusHealthValueShadow        FgColor     "20 170 210 255"        Linear 0.125 0.175
+    Animate PlayerStatusHealthValueSpecShadow2   FgColor     "10 10 10 255"          Linear 0.0 0.0
+    Animate PlayerStatusHealthImageOverheal      Alpha       "255"                   Accel 0.0 0.0
+    Animate ShadedBarThinBuff                    Alpha       "255"                   Accel 0.0 0.0
+    Animate PlayerStatusHealthValueCam           FgColor     "BuffedColor"           Accel 0.0 0.0
 
-    Animate PlayerStatusHealthValueSpec     FgColor     "20 225 255 255"              Accel 0.0 0.0
-    Animate PlayerStatusHealthValueSpecShadow    FgColor  "BuffedColor"    Linear 0.0 0.0
-    Animate PlayerStatusHealthValueTour     FgColor     "BuffedColor"           Accel 0.0 0.0
+    Animate PlayerStatusHealthValueSpec          FgColor     "30 235 255 255"         Linear 0.0 0.075 
+    Animate PlayerStatusHealthValueSpec        FgColor       "10 170 215 255"       Linear 0.125 0.175
+    Animate PlayerStatusHealthValueSpecShadow    FgColor     "BuffedColor"           Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTour          FgColor     "BuffedColor"           Accel 0.0 0.0
 
-    Animate xHairNormal             FgColor     "BuffedColor"           Accel 0.0 0.0
-
-    Animate xHairRequest            FgColor     "BuffedColor"           Accel 0.0 0.0
-
-    Animate xHairCircle         FgColor     "BuffedColor"           Accel 0.0 0.0
-
-    Animate xHairDotOutline             FgColor     "BuffedColor"       Accel 0.0 0.0
+    Animate xHairNormal                          FgColor     "BuffedColor"           Accel 0.0 0.0
+    Animate xHairRequest                         FgColor     "BuffedColor"           Accel 0.0 0.0
+    Animate xHairCircle                          FgColor     "BuffedColor"           Accel 0.0 0.0
+    Animate xHairDotOutline                      FgColor     "BuffedColor"           Accel 0.0 0.0
 
     RunEvent HudHealthBonusPulseLoop    0.4
 }
@@ -241,10 +240,10 @@ event HudHealthBonusPulseLoop
     RunEvent PlayerStatusHealthValueCam 0.0
     RunEvent PlayerStatusHealthValueSpec 0.0
     RunEvent PlayerStatusHealthValueTour 0.0
-        RunEvent xHairNormal 0.0
-        RunEvent xHairRequest 0.0
-        RunEvent xHairCircle 0.0
-        RunEvent xHairDotOutline 0.0
+    RunEvent xHairNormal 0.0
+    RunEvent xHairRequest 0.0
+    RunEvent xHairCircle 0.0
+    RunEvent xHairDotOutline 0.0
 }
 
 event HudHealthBonusPulseStop
@@ -257,31 +256,28 @@ event HudHealthBonusPulseStop
     StopEvent PlayerStatusHealthValueTour 0.0
     StopEvent ShadedBarThin 0.0
     StopEvent ShadedBarThinLow 0.0
-        StopEvent xHairNormal 0.0
-        StopEvent xHairRequest 0.0
-        StopEvent xHairCircle 0.0
-        StopEvent xHairDotOutline 0.0
+    StopEvent xHairNormal 0.0
+    StopEvent xHairRequest 0.0
+    StopEvent xHairCircle 0.0
+    StopEvent xHairDotOutline 0.0
 
-    Animate PlayerStatusHealthValue     FgColor     "White"       Accel 0.0 0.0
-    Animate PlayerStatusHealthImageOverheal     Alpha       "0"         Accel 0.0 0.0
-    Animate ShadedBarThin   Alpha       "255"           Accel 0.0 0.0
-    Animate PlayerStatusHealthValueShadow   FgColor     "10 10 10 255"         Linear 0.0 0.0
-     Animate PlayerStatusHealthValueSpecShadow2 FgColor "10 10 10 255"        Linear 0.0 0.0
-    Animate ShadedBarThinBuff   Alpha       "0"         Accel 0.0 0.0
+    Animate PlayerStatusHealthValue              FgColor     "White"                 Accel 0.0 0.0
+    Animate PlayerStatusHealthImageOverheal      Alpha       "0"                     Accel 0.0 0.0
+    Animate ShadedBarThin                        Alpha       "255"                   Accel 0.0 0.0
+    Animate PlayerStatusHealthValueShadow        FgColor     "10 10 10 255"          Linear 0.0 0.0
+    Animate PlayerStatusHealthValueSpecShadow2   FgColor     "10 10 10 255"          Linear 0.0 0.0
+    Animate ShadedBarThinBuff                    Alpha       "0"                     Accel 0.0 0.0
     
-        Animate PlayerStatusHealthValueCam  FgColor     "234 234 234 255"       Accel 0.0 0.0
+    Animate PlayerStatusHealthValueCam           FgColor     "234 234 234 255"       Accel 0.0 0.0
 
-        Animate PlayerStatusHealthValueSpec     FgColor     "White"       Accel 0.0 0.0
-        Animate PlayerStatusHealthValueSpecShadow    FgColor  "0 0 0 0"    Linear 0.0 0.0
-        Animate PlayerStatusHealthValueTour     FgColor     "234 234 234 255"       Accel 0.0 0.0
+    Animate PlayerStatusHealthValueSpec          FgColor     "White"                 Accel 0.0 0.0
+    Animate PlayerStatusHealthValueSpecShadow    FgColor     "0 0 0 0"               Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTour          FgColor     "234 234 234 255"       Accel 0.0 0.0
 
-    Animate xHairNormal             FgColor     "234 234 234 255"       Accel 0.0 0.0
-
-    Animate xHairRequest            FgColor     "234 234 234 255"       Accel 0.0 0.0
-
-    Animate xHairCircle             FgColor     "234 234 234 255"       Accel 0.0 0.0
-
-    Animate xHairDotOutline             FgColor     "234 234 234 255"       Accel 0.0 0.0
+    Animate xHairNormal                          FgColor     "234 234 234 255"       Accel 0.0 0.0
+    Animate xHairRequest                         FgColor     "234 234 234 255"       Accel 0.0 0.0
+    Animate xHairCircle                          FgColor     "234 234 234 255"       Accel 0.0 0.0
+    Animate xHairDotOutline                      FgColor     "234 234 234 255"       Accel 0.0 0.0
 }
 
 //===========================================
@@ -289,29 +285,28 @@ event HudHealthBonusPulseStop
 //Health Dying Pulse
 event HudHealthDyingPulse
 {
-    Animate PlayerStatusHealthBonusImage    Alpha       "255"       Linear 0.0 0.075
-    Animate PlayerStatusHealthBonusImage    Alpha       "0"         Linear 0.125 0.075
+    Animate PlayerStatusHealthBonusImage         Alpha       "255"                  Linear 0.0 0.075
+    Animate PlayerStatusHealthBonusImage         Alpha       "0"                    Linear 0.125 0.075
 
-    Animate PlayerStatusHealthValue     FgColor     "White"          Accel 0.0 0.0
-    Animate ShadedBarThin   Alpha       "0"         Accel 0.0 0.0
-    Animate PlayerStatusHealthValueShadow  FgColor     "LowColor"       Linear 0.0 0.0
-     Animate PlayerStatusHealthValueSpecShadow2 FgColor "10 10 10 255"        Linear 0.0 0.0
-    Animate PlayerStatusHealthImageOverheal5    Alpha       "135"           Accel 0.0 0.0
-    Animate ShadedBarThinLow    Alpha       "255"           Accel 0.0 0.0
+    Animate PlayerStatusHealthValue              FgColor     "White"                Accel 0.0 0.0
+    Animate ShadedBarThin                        Alpha       "0"                    Accel 0.0 0.0
+    Animate PlayerStatusHealthValueShadow        FgColor     "255 120 50 255"       Linear 0.0 0.075
+    Animate PlayerStatusHealthValueShadow        FgColor     "210 50 5 255"         Linear 0.125 0.075
+    Animate PlayerStatusHealthValueSpecShadow2   FgColor     "10 10 10 255"         Linear 0.0 0.0
+    Animate PlayerStatusHealthImageOverheal5     Alpha       "135"                  Accel 0.0 0.0
+    Animate ShadedBarThinLow                     Alpha       "255"                  Accel 0.0 0.0
 
-    Animate PlayerStatusHealthValueCam  FgColor     "LowColor"      Accel 0.0 0.0
+    Animate PlayerStatusHealthValueCam           FgColor     "LowColor"             Accel 0.0 0.0
 
-    Animate PlayerStatusHealthValueSpec     FgColor     "255 100 20 255"          Accel 0.0 0.0
-    Animate PlayerStatusHealthValueSpecShadow    FgColor  "LowColor"    Linear 0.0 0.0
-    Animate PlayerStatusHealthValueTour     FgColor     "LowColor"      Accel 0.0 0.0
+    Animate PlayerStatusHealthValueSpec          FgColor     "255 85 10 255"        Linear 0.0 0.075
+    Animate PlayerStatusHealthValueSpec          FgColor     "210 50 0 255"         Linear 0.125 0.075
+    Animate PlayerStatusHealthValueSpecShadow    FgColor     "LowColor"             Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTour          FgColor     "LowColor"             Accel 0.0 0.0
 
-    Animate xHairNormal             FgColor     "LowColor"      Accel 0.0 0.0
-
-    Animate xHairRequest            FgColor     "LowColor"      Accel 0.0 0.0
-
-    Animate xHairCircle             FgColor     "LowColor"      Accel 0.0 0.0
-
-    Animate xHairDotOutline             FgColor     "LowColor"      Accel 0.0 0.0
+    Animate xHairNormal                          FgColor     "LowColor"             Accel 0.0 0.0
+    Animate xHairRequest                         FgColor     "LowColor"             Accel 0.0 0.0
+    Animate xHairCircle                          FgColor     "LowColor"             Accel 0.0 0.0
+    Animate xHairDotOutline                      FgColor     "LowColor"             Accel 0.0 0.0
 
     RunEvent HudHealthDyingPulseLoop    0.25
 }
@@ -346,27 +341,27 @@ event HudHealthDyingPulseStop
     StopEvent xHairCircle 0.0
     StopEvent xHairDot 0.0
 
-    Animate PlayerStatusHealthValue     FgColor     "White"           Accel 0.0 0.0
-    Animate PlayerStatusHealthValue     Position        "70 135"            Accel 0.0 0.0
-    Animate ShadedBarThin   Alpha       "255"           Accel 0.0 0.0
-    Animate PlayerStatusHealthValueShadow    FgColor     "Black"         Linear 0.0 0.0
-     Animate PlayerStatusHealthValueSpecShadow2 FgColor "10 10 10 255"        Linear 0.0 0.0
-    Animate PlayerStatusHealthImageOverheal5    Alpha       "0"         Accel 0.0 0.0
-    Animate ShadedBarThinLow    Alpha       "0"         Accel 0.0 0.0
+    Animate PlayerStatusHealthValue              FgColor     "White"                Accel 0.0 0.0
+    Animate PlayerStatusHealthValue              Position    "70 135"               Accel 0.0 0.0
+    Animate ShadedBarThin                        Alpha       "255"                  Accel 0.0 0.0
+    Animate PlayerStatusHealthValueShadow        FgColor     "Black"                Linear 0.0 0.0
+    Animate PlayerStatusHealthValueSpecShadow2   FgColor     "10 10 10 255"         Linear 0.0 0.0
+    Animate PlayerStatusHealthImageOverheal5     Alpha       "0"                    Accel 0.0 0.0
+    Animate ShadedBarThinLow                     Alpha       "0"                    Accel 0.0 0.0
 
-    Animate PlayerStatusHealthValueCam  FgColor     "234 234 234 255"       Accel 0.0 0.0
+    Animate PlayerStatusHealthValueCam           FgColor     "234 234 234 255"      Accel 0.0 0.0
 
-    Animate PlayerStatusHealthValueSpec     FgColor     "White"           Accel 0.0 0.0
-    Animate PlayerStatusHealthValueSpecShadow    FgColor  "0 0 0 0"    Linear 0.0 0.0
-    Animate PlayerStatusHealthValueTour     FgColor     "234 234 234 255"       Accel 0.0 0.0
+    Animate PlayerStatusHealthValueSpec          FgColor     "White"                Accel 0.0 0.0
+    Animate PlayerStatusHealthValueSpecShadow    FgColor     "0 0 0 0"              Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTour          FgColor     "234 234 234 255"      Accel 0.0 0.0
 
-    Animate xHairNormal             FgColor     "234 234 234 255"       Accel 0.0 0.0
+    Animate xHairNormal                          FgColor     "234 234 234 255"      Accel 0.0 0.0
 
-    Animate xHairRequest            FgColor     "234 234 234 255"       Accel 0.0 0.0
+    Animate xHairRequest                         FgColor     "234 234 234 255"      Accel 0.0 0.0
 
-    Animate xHairCircle             FgColor     "234 234 234 255"       Accel 0.0 0.0
+    Animate xHairCircle                          FgColor     "234 234 234 255"      Accel 0.0 0.0
 
-    Animate xHairDotOutline             FgColor     "234 234 234 255"       Accel 0.0 0.0
+    Animate xHairDotOutline                      FgColor     "234 234 234 255"      Accel 0.0 0.0
 }
 
 //===========================================
